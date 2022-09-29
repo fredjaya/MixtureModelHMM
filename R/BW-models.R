@@ -145,6 +145,6 @@ run_HMM <- function(site_info,aln_info,model=4,iter=10000,algorithm="viterbi"){
 
   res$hmm_transition_table=transition_table(res)
 
-  res$initial_scatter_plot=plot_scatter(gsub(".sitelh",".siteprob",site_info))
+  res$initial_scatter_plot=plot_scatter(site_info)
   return(res)
 }
